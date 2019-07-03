@@ -27,7 +27,7 @@ const styles = makeStyles( theme => ( {
       padding: 0,
     },
 
-   
+
   },
   imageContainer: {
     textAlign: 'center',
@@ -85,6 +85,11 @@ const styles = makeStyles( theme => ( {
     maxWidth: 295,
     maxHeight: 595,
     marginTop: 40,
+
+    [ theme.breakpoints.up( 'sm' ) ]: {
+      justifyContent: 'flex-start',
+      padding: '20px 0 40px 0',
+    },
   },
 } ) );
 
@@ -111,7 +116,7 @@ export default function HeroBanner() {
             Get Started
           </Button>
           <Button
-            className={ `${ classes.buttonText } ${ classes.learnMoreButton }`}
+            className={ `${ classes.buttonText } ${ classes.learnMoreButton }` }
           >
             Learn More
           </Button>
